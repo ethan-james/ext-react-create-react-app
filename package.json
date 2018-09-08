@@ -90,7 +90,18 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      [
+        "env",
+        {
+          "modules": false
+        }
+      ],
+      "stage-2",
+      "react"
+    ],
+    "plugins": [
+      "@sencha/ext-react-babel-plugin",
+      "transform-es2015-modules-commonjs"
     ]
   },
   "eslintConfig": {
